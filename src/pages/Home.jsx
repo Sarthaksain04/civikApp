@@ -1,6 +1,7 @@
 import React ,{useState,useEffect}from 'react'
 import  appwriteService  from '../appwrite/config'
 import { Container,PostCard } from '../Components'
+import Bgblog from './Bgblog.png'
 
 
 function Home() {
@@ -14,22 +15,33 @@ function Home() {
     }, [])
     if(posts.length===0){
         return (
-            <div className="w-full py-8 mt-4 text-center">
-                <Container>
-                    <div className="flex flex-wrap">
+            <div className="w-full py-8 mt-4 mx-auto ">
+                <section
+        className="w-full h-screen bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center"
+        style={{ backgroundImage: `url(${Bgblog})` }}
+      >
+        <div className="bg-white/80 p-6 rounded-lg shadow-md text-center">
+          <h1 className="text-3xl font-bold text-gray-800">
+            Login to read posts
+          </h1>
+        </div>
+      </section>
+                {/* <Container >
+                    
+                    <div className="flex flex-wrap  ">
                         <div className="p-2 w-full">
                             <h1 className="text-2xl font-bold hover:text-gray-500">
                                 Login to read posts
                             </h1>
                         </div>
                     </div>
-                </Container>
+                </Container> */}
             </div>
         )
 
     }
       return (
-        <div className='w-full py-8'>
+        <div className='w-full py-8 bg-white'>
             <Container>
                 <div className='flex flex-wrap'>
                     {posts.map((post) => (

@@ -4,7 +4,7 @@ import { Postform,Container } from '../Components'
 
 function AddPost() {
   return (
-    <div className='py-8'>
+    <div className='py-8 bg-amber-50'>
         <Container>
             <Postform/>
         </Container>

@@ -6,9 +6,10 @@ function Logo() {
     <img
       src={BlogImage}
       alt="Logo"
-      className="h-70 w-40 "
+      className="h-12 w-40 "
      
     />
+   
   );
 }
 
