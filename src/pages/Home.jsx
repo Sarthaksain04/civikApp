@@ -1,58 +1,81 @@
-import React ,{useState,useEffect}from 'react'
-import  appwriteService  from '../appwrite/config'
-import { Container,PostCard } from '../Components'
-import Bgblog from './Bgblog.png'
+import React, { useState, useEffect } from "react";
+import appwriteService from "../appwrite/config";
+import { Container, PostCard } from "../Components";
+import TextType from "../Animation/TextType";
+import CircularGallery from "../Animation/CircularGallery";
+import Carousel from "../Animation/Carousel";
 
 
 function Home() {
-    const [posts,setPosts]=useState([])
-     useEffect(() => {
-        appwriteService.getPosts().then((posts) => {
-            if (posts) {
-                setPosts(posts.documents)
-            }
-        })
-    }, [])
-    if(posts.length===0){
-        return (
-            <div className="w-full py-8 mt-4 mx-auto ">
-                <section
-        className="w-full h-screen bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center"
-        style={{ backgroundImage: `url(${Bgblog})` }}
-      >
-        <div className="bg-white/80 p-6 rounded-lg shadow-md text-center">
-          <h1 className="text-3xl font-bold text-gray-800">
-            Login to read posts
-          </h1>
-        </div>
-      </section>
-                {/* <Container >
-                    
-                    <div className="flex flex-wrap  ">
-                        <div className="p-2 w-full">
-                            <h1 className="text-2xl font-bold hover:text-gray-500">
-                                Login to read posts
-                            </h1>
-                        </div>
-                    </div>
-                </Container> */}
+  const [posts, setPosts] = useState([]);
+  useEffect(() => {
+    appwriteService.getPosts().then((posts) => {
+      if (posts) {
+        setPosts(posts.documents);
+      }
+    });
+  }, []);
+  if (posts.length === 0) {
+    return (
+      <div className="">
+        <section>
+         <Carousel
+  baseWidth={1000}
+  autoplay={true}
+  autoplayDelay={3500}
+  pauseOnHover={true}
+  loop={true}
+  round={false}
+>
+  <TextType
+  text={[                                         
+    "Welcome To BLOG ❤️",                           
+    "Read, Write and Explore", 
+    "Happy blogging, fellow writers!",                                 
+  ]}
+  typingSpeed={75}
+  pauseDuration={1500}
+  showCursor={true}
+  cursorCharacter="|"
+  textColors={[
+    "text-blue-600",      
+    "text-pink-500",        
+    "text-green-600",     
+    "text-purple-500",   
+  ]}
+/>
+</Carousel>
+                   
+            <div style={{ height: "600px", position: "relative" }}>
+              <CircularGallery
+                bend={0}
+                textColor="#000000
+"
+                borderRadius={0.05}
+                scrollEase={0.004}
+              />
+              
             </div>
-        )
 
-    }
-      return (
-        <div className='w-full py-8 bg-white'>
-            <Container>
-                <div className='flex flex-wrap'>
-                    {posts.map((post) => (
-                        <div key={post.$id} className='p-2 w-1/4'>
-                            <PostCard {...post} />
-                        </div>
-                    ))}
-                </div>
-            </Container>
+
+          
+        </section>
+      </div>
+    );
+  }
+  return (
+    <div className="w-full py-8 bg-white">
+      <Container>
+        <div className="flex flex-wrap">
+          {posts.map((post) => (
+            <div key={post.$id} className="p-2 w-1/4">
+              <PostCard {...post} />
+            </div>
+          ))}
         </div>
-    )
+      </Container>
+    </div>
+  );
 }
 
-export default Home
+export default Home;

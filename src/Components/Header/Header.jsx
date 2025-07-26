@@ -40,7 +40,7 @@ function Header() {
   return (
     <header className="shadow sticky z-60 top-0 bg-white" >
         <Container>
-            <nav className='flex h-13'>
+            <nav className='flex h-18'>
                 <div className=' mr-4'>
                     <Link to='/'>
                     <Logo width='70px'/>
@@ -52,14 +52,14 @@ function Header() {
                     item.active ? (
                         <li key={item.name}>
                             <button onClick={()=>navigate(item.slug)}
-                            className='inline-bock px-6 py-2 duration-200 hover:bg-blue-100 rounded-full'
+                            className='inline-bock px-8 py-5 duration-200  text-blue-700 font-bold '
                             >{item.name}
                             </button>
                         </li>
                     ) :null
                     )}
                     {authStatus && (
-                        <li>
+                        <li  className='inline-bock px-8 py-3 duration-200  text-blue-700 font-bold'>
                             <LogoutBtn/>
                         </li>
                     )}
