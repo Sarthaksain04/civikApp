@@ -1,8 +1,45 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
 import Logo from '../Logo'
-
-function Footer() {
+function Footer(){
+    const navigate=useNavigate()
+const navItem=[
+    {
+        name:'Feature',
+        slug:"/feture",
+        active:true
+    },
+    {
+        name:'Help',
+        slug:"/help",
+        active:true
+    },
+     {
+        name:'Contact Us',
+        slug:"/contact-us",
+        active:true
+    },
+    {
+        name:'Support',
+        slug:"/support",
+        active:true
+    },
+    {
+        name:'Term & Conditions',
+        slug:"/termcondition",
+        active:true
+    },
+     {
+        name:'Privicy Policy',
+        slug:"/privicy-policy",
+        active:true
+    },
+     {
+        name:'Licence',
+        slug:"/licience",
+        active:true
+    },
+]
   return (
     <section className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 border-t-2 border-t-black ">
             <div className="relative z-10 mx-auto max-w-7xl px-4">
@@ -28,25 +65,9 @@ function Footer() {
                                 <li className="mb-4">
                                     <Link
                                         className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
+                                        to="/feture"
                                     >
                                         Features
-                                    </Link>
-                                </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Pricing
-                                    </Link>
-                                </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Affiliate Program
                                     </Link>
                                 </li>
                                 <li>
@@ -54,7 +75,7 @@ function Footer() {
                                         className=" text-base font-medium text-gray-900 hover:text-gray-700"
                                         to="/"
                                     >
-                                        Press Kit
+                                        Home
                                     </Link>
                                 </li>
                             </ul>
@@ -69,15 +90,7 @@ function Footer() {
                                 <li className="mb-4">
                                     <Link
                                         className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
-                                    >
-                                        Account
-                                    </Link>
-                                </li>
-                                <li className="mb-4">
-                                    <Link
-                                        className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
+                                        to="/help"
                                     >
                                         Help
                                     </Link>
@@ -85,7 +98,7 @@ function Footer() {
                                 <li className="mb-4">
                                     <Link
                                         className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
+                                        to="/contact-us"
                                     >
                                         Contact Us
                                     </Link>
@@ -93,7 +106,7 @@ function Footer() {
                                 <li>
                                     <Link
                                         className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
+                                        to="/support"
                                     >
                                         Customer Support
                                     </Link>
@@ -110,7 +123,7 @@ function Footer() {
                                 <li className="mb-4">
                                     <Link
                                         className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
+                                        to="/termcondition"
                                     >
                                         Terms &amp; Conditions
                                     </Link>
@@ -118,7 +131,7 @@ function Footer() {
                                 <li className="mb-4">
                                     <Link
                                         className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
+                                        to="/privicy-policy"
                                     >
                                         Privacy Policy
                                     </Link>
@@ -126,7 +139,7 @@ function Footer() {
                                 <li>
                                     <Link
                                         className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                                        to="/"
+                                        to="/licience"
                                     >
                                         Licensing
                                     </Link>

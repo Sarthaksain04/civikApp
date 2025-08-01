@@ -12,6 +12,11 @@ import Postform from "./postform/Postform";
 import PostCard from "./PostCard";
 import AuthLayout from "./AuthLayout";
 import Input from "./Input";
+import TextType from "../Animation/TextType";
+import CircularGallery from "../Animation/CircularGallery";
+import Carousel from "../Animation/Carousel";
+import SplitText from "../Animation/SplitText"
+
 
 export {
     Header,
@@ -28,4 +33,8 @@ export {
     AuthLayout, 
     Input,
     Select,
+    TextType,
+    CircularGallery,
+    Carousel,
+    SplitText,
 }

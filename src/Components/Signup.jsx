@@ -5,7 +5,6 @@ import { login } from '../store/authSlice'
 import { Button, Input, Logo } from './index'
 import { useDispatch } from 'react-redux'
 import { useForm } from 'react-hook-form'
-import Bganimated from '../Animation/Bganimated' // Import your animated background component
 
 function Signup() {
     const navigate = useNavigate()
@@ -29,31 +28,22 @@ function Signup() {
 
     return (
         <div className="relative flex items-center justify-center h-screen overflow-hidden">
-            {/* Animated Background */}
-            <div className="absolute inset-0 z-0">
-               <Bganimated 
-                               color={[1, 1, 1]}
-                                mouseReact={false} 
-                                amplitude={0.1} 
-                                speed={0.05} 
-                                />
-            </div>
-            
-            {/* Signup Form */}
-            <div className="relative z-10 mx-auto w-full max-w-lg bg-white/90 backdrop-blur-sm rounded-xl p-8 border border-black/10 shadow-xl">
+           
+         
+            <div className="relative z-10 mx-auto w-full max-w-lg bg-gray-100 backdrop-blur-sm rounded-xl p-8 border border-black/10 shadow-xl">
                 <div className="mb-2 flex justify-center">
                     <span className="inline-block w-full max-w-[150px]">
                         <Logo width="100%" />
                     </span>
                 </div>
-                <h2 className="text-center text-2xl font-bold leading-tight">Welcome</h2>
+                <h2 className="text-center text-2xl font-bold leading-tight">Welcome!!</h2>
                 <h2 className="text-center text-2xl font-bold leading-tight">Sign up to create account</h2>
                 <p className="mt-2 text-center text-base text-black/60">
                     <br />
                     Already have an account?&nbsp;
                     <Link
                         to="/login"
-                        className="font-medium text-primary transition-all duration-200 hover:underline"
+                        className="font-medium text-primary transition-all duration-200 hover:underline  hover:text-blue-600 "
                     >
                         Sign In
                     </Link>
@@ -65,6 +55,7 @@ function Signup() {
                         <Input 
                             label="Full name:"
                             placeholder='Enter your full name'
+                            className="bg-white border-white text-black placeholder-black focus:border-blue-300 focus:ring-blue-300/30"
                             {...register("name", {
                                 required: true,
                             })} 
@@ -73,6 +64,7 @@ function Signup() {
                             label="Email:"
                             placeholder='Enter your email'
                             type='email'
+                            className="bg-white border-white text-black placeholder-black focus:border-blue-300 focus:ring-blue-300/30"
                             {...register("email", {
                                 required: true,
                                 validate: {
@@ -85,13 +77,14 @@ function Signup() {
                             label="Password" 
                             type='password'
                             placeholder='Enter your password here'
+                            className="bg-white border-white text-black placeholder-black focus:border-blue-300 focus:ring-blue-300/30"
                             {...register("password", {
                                 required: true,
                             })}
                         />
                         <Button
                             type="submit"
-                            className='w-full'
+                            className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold py-3 px-6 rounded-xl shadow-lg transform transition-all duration-200 hover:scale-105 hover:shadow-xl"
                         >
                             Create Account
                         </Button>

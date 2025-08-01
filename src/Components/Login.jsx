@@ -5,8 +5,6 @@ import { Button, Input, Logo } from './index'
 import { useDispatch } from 'react-redux'
 import authService from '../appwrite/auth'
 import { useForm } from 'react-hook-form'
-import blogBg from '../Components/Image/blogBg.png'
-import Bganimated from '../Animation/Bganimated'
 
 function Login() {
     const navigate = useNavigate()
@@ -30,22 +28,14 @@ function Login() {
 
     return (
         <div className="relative w-full h-screen overflow-hidden">
-            {/* Animated Background */}
-            <div className="absolute inset-0 z-0">
-                <Bganimated 
-                color={[1, 1, 1]}
-                 mouseReact={false} 
-                 amplitude={0.1} 
-                 speed={0.05} />
-            </div>
 
         
-            <div className="relative z-10 flex items-center justify-center w-full h-screen p-4">
+            <div className="relative z-15 flex items-center justify-center w-full h-screen p-4">
                
                 <div className="mx-auto w-full max-w-lg bg-gray-100 backdrop-blur-xl rounded-2xl p-8 border border-white/20 shadow-2xl">
                     
                     <div className="mb-6 flex justify-center">
-                        <span className="inline-block w-full max-w-[100px]">
+                        <span className="inline-block w-full max-w-[150px]">
                             <Logo width="100%" />
                         </span>
                     </div>

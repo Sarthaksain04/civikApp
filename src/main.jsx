@@ -13,6 +13,13 @@ import Signup from "./pages/Signup";
 import EditPost from "./pages/EditPost.jsx"
 import Post from "./pages/Post.jsx"
 import AllPost from "./pages/AllPost.jsx"
+import Feture from './pages/Feture.jsx';
+import Help from './pages/Help.jsx';
+import ContactUs from './pages/ContactUs.jsx';
+import Support from './pages/Support.jsx';
+import Termcondition from './pages/Termcondition.jsx';
+import Privicypolicy from './pages/Privicypolicy.jsx';
+import Licience from './pages/Licience.jsx';
 
 
 const router = createBrowserRouter([
@@ -70,6 +77,55 @@ const router = createBrowserRouter([
       {
         path: "/post/:slug",
         element: <Post />,
+      },
+      {
+        path: "/feture",
+        element: (
+            <Feture />
+          
+        ),
+      },
+       {
+        path: "/help",
+        element: (
+            <Help />
+          
+        ),
+      },
+       {
+        path: "/contact-us",
+        element: (
+            <ContactUs />
+          
+        ),
+      },
+       {
+        path: "/support",
+        element: (
+            <Support />
+          
+        ),
+      },
+      {
+        path: "/termcondition",
+        element: (
+           <Termcondition/>
+          
+        ),
+      },
+       {
+        path: "/privicy-policy",
+        element: (
+           <Privicypolicy/>
+          
+        ),
+      },
+       {
+        path: "/licience",
+        element: (
+           <Licience/>
+          
+        ),
       },
     ],
   },
