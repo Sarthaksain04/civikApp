@@ -6,6 +6,8 @@ import { Link,useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux'
 import Blogbg from '../Components/Image/blogBg.png'
 
+import  LaptopImg from '../Components/Image/LaptopImg.png'
+
 function Home() {
    const authStatus=useSelector((state)=>state.auth.status)
     const navigate=useNavigate()
@@ -43,9 +45,9 @@ function Home() {
         <section>
           <div className="flex justify-end ">
              <img 
-             src={Blogbg} 
+             src={LaptopImg} 
               alt="Blog background" 
-             className="w-150 h-127 mask-l-from-0% m-1 rounded-lg shadow-lg"
+             className="w-100 h-120 mt-3  m-1 mr-20 rounded-3xl  shadow-lg"
               />   
           </div>
           <div className="h-500px -mt-80 mx-7 p-6  ">
@@ -87,6 +89,7 @@ function Home() {
             <nav className='flex h-18 m-10 mx-1'>
                     {navItem.map((item)=>
                     item.active ? (
+                      
                         <div key={item.name} className="flex m-2 my-2 ">
                             <button onClick={()=>navigate(item.slug)}
                                  className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-8 rounded-full shadow-lg transition-all duration-300 w-48 transform hover:-translate-y-1 hover:scale-105"
