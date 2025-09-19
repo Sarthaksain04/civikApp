@@ -1,5 +1,5 @@
 import React from 'react';
-import BlogImage from './Blogbg.png';
+import BlogImage from './Blogbg.png'; // Ensure the path to your image is correct
 
 function Logo() {
   return (
