@@ -101,7 +101,7 @@ function Home() {
             <div className="flex flex-col md:flex-row items-center justify-between gap-10">
               <div className="md:w-1/2">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-800 mb-6 leading-tight">
-                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Next-Gen </span> Civic Issue Reporting
+                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Next-Gen </span> Civique
                 </h1>
                 <p className="text-lg md:text-xl text-gray-700 mb-10 max-w-2xl">
                   An innovative Civic Issues Management System designed to transform how citizens report, track, and resolve civic problems
