@@ -101,10 +101,10 @@ function Home() {
             <div className="flex flex-col md:flex-row items-center justify-between gap-10">
               <div className="md:w-1/2">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-800 mb-6 leading-tight">
-                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Next-Gen</span> Blog Platform
+                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Civic</span> User
                 </h1>
                 <p className="text-lg md:text-xl text-gray-700 mb-10 max-w-2xl">
-                  An innovative content management system that transforms how you create, share, and discover meaningful content in the digital age.
+                  An innovative Civic Issues Management System designed to transform how citizens report, track, and resolve civic problems
                 </p>
                 <div className="flex flex-wrap gap-5 mb-8">
                   {navItem.map((item) =>
@@ -158,7 +158,7 @@ function Home() {
               <span className="inline-block px-4 py-2 bg-white/70 backdrop-blur-sm text-blue-800 rounded-full text-sm font-semibold mb-3 border border-white/30">POWERFUL FEATURES</span>
               <h2 className="text-3xl md:text-5xl font-bold text-center text-gray-800 mb-6">Why Choose Our Platform</h2>
               <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
-              <p className="text-lg text-gray-700 max-w-2xl mx-auto">Designed for creators who demand excellence, with tools that make your content shine</p>
+              <p className="text-lg text-gray-700 max-w-2xl mx-auto">Designed for citizens who demand accountability, with tools that make issue reporting simple, effective, and impactful.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
               <div className="bg-white/70 backdrop-blur-sm p-8 rounded-xl shadow-xl border border-white/30 transition-all duration-300 hover:shadow-2xl hover:bg-white/80 transform hover:-translate-y-2">
@@ -167,8 +167,10 @@ function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-semibold text-gray-800 mb-4">Professional Writing Tools</h3>
-                <p className="text-gray-700 text-lg">Advanced editor with markdown support, formatting options, and SEO optimization to create perfect blog posts.</p>
+                <h3 className="text-2xl font-semibold text-gray-800 mb-4">Smart Grievance Reporting</h3>
+                <p className="text-gray-700 text-lg">
+                  Report civic issues instantly with photos, voice, or text. Categorize problems easily to ensure they reach the right department.
+                </p>
               </div>
               <div className="bg-white/70 backdrop-blur-sm p-8 rounded-xl shadow-xl border border-white/30 transition-all duration-300 hover:shadow-2xl hover:bg-white/80 transform hover:-translate-y-2">
                 <div className="w-16 h-16 bg-purple-100/80 backdrop-blur-sm rounded-full flex items-center justify-center text-purple-600 mb-6 border border-purple-200/50">
@@ -196,11 +198,11 @@ function Home() {
         <section className="w-full py-24 bg-gradient-to-r from-blue-50 via-indigo-50 to-purple-50 relative overflow-hidden">
           <div className="absolute inset-0 bbg-gradient-to-r from-blue-50 via-indigo-50 to-purple-50"></div>
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-800">Ready to Start Creating?</h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-800">Ready to Make Your City Better?</h2>
             <div className="w-32 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
             <p className="text-xl text-gray-700 mb-10 max-w-3xl mx-auto">
-              Elevate your content with our advanced blogging platform. Create stunning posts with powerful editing tools and beautiful templates.
-            </p>
+              Empower your community with a modern civic management platform. File, track, and resolve issues with ease
+              </p>
             <div className="inline-flex flex-col sm:flex-row items-center justify-center gap-6">
               <button 
                 onClick={() => navigate('/signup')} 
@@ -225,11 +227,10 @@ function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-20">
               <span className="inline-block px-4 py-2 bg-white/70 backdrop-blur-sm text-purple-800 rounded-full text-sm font-semibold mb-3 border border-white/30">EXPLORE CONTENT</span>
-              <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-6">Featured Blog Posts</h2>
+              <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-6">Featured Issued Posts</h2>
               <div className="w-32 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
               <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-                Preview our trending blog posts. Login to read the full content and access all articles.
-              </p>
+               Browse highlighted grievances in your area. Login to access complete information and status updates              </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
               {/* Placeholder cards since no actual posts */}
@@ -288,29 +289,28 @@ function Home() {
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">A Powerful Blogging Platform</h2>
               <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"></div>
               <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-                Experience a feature-rich platform designed for modern content creators
-              </p>
+              A powerful platform built for citizens to report, track, and resolve issues seamlessly              </p>
             </div>
             
             <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               <AnimatedCounter 
                 end={100} 
-                label="Active Blogs" 
+                label="Active issues" 
                 duration={2500}
               />
               <AnimatedCounter 
                 end={50} 
-                label="Templates" 
+                label="Issues Resolved" 
                 duration={2300}
               />
               <AnimatedCounter 
                 end={200} 
-                label="Published Articles" 
+                label=" Registered Users" 
                 duration={2700}
               />
               <AnimatedCounter 
                 end={15} 
-                label="Content Categories" 
+                label=" Pending Issues" 
                 duration={2100}
               />
              
@@ -319,7 +319,7 @@ function Home() {
             <div className="mt-16 text-center">
               <div className="inline-block bg-white/70 backdrop-blur-sm px-8 py-5 rounded-xl shadow-lg border border-white/30">
                 <p className="text-gray-800 font-medium">
-                  <span className="text-blue-600 font-semibold">Start today</span> and create professional blog content in minutes
+                  <span className="text-blue-600 font-semibold">Start today</span> and Report issues in just minutes
                 </p>
               </div>
             </div>
