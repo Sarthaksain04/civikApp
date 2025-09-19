@@ -13,7 +13,7 @@ import {Editor } from '@tinymce/tinymce-react';
     control={control}
     render={({field:{onChange}})=>( 
            <Editor
-           apiKey="982wfrzpdlrygnfi9btif6ofj6wnpcb108vi0phew4rhcbvh"
+           apiKey="p0kx6bhb7hvlcgq3plthsmvz15msh87h50qrf0o58a9wwl5e"
         initialValue={defaultValue}
         init={{
             initialValue: defaultValue,
