@@ -227,7 +227,7 @@ function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-20">
               <span className="inline-block px-4 py-2 bg-white/70 backdrop-blur-sm text-purple-800 rounded-full text-sm font-semibold mb-3 border border-white/30">EXPLORE CONTENT</span>
-              <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-6">Featured Issued Posts</h2>
+              <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-6">Featured Reports</h2>
               <div className="w-32 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-8"></div>
               <p className="text-lg text-gray-700 max-w-3xl mx-auto">
                Browse highlighted grievances in your area. Login to access complete information and status updates              </p>
@@ -240,14 +240,14 @@ function Home() {
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20"></div>
                   </div>
                   <div className="p-8">
-                    <h3 className="text-xl font-bold text-gray-800 mb-3">{item === 1 ? "The Art of Creative Writing" : item === 2 ? "Digital Marketing Strategies" : "Web Development Trends 2025"}</h3>
-                    <p className="text-gray-700 mb-4">{item === 1 ? "Unlock your creative potential with these expert writing tips..." : item === 2 ? "Learn how to optimize your online presence with these strategies..." : "Discover the latest technologies shaping the web development landscape..."}</p>
+                    <h3 className="text-xl font-bold text-gray-800 mb-3">{item === 1 ? "Road Damage and Pothole Report" : item === 2 ? "Water Supply Issue Report" : "Garbage and Sanitation Concern Report"}</h3>
+                    <p className="text-gray-700 mb-4">{item === 1 ? "Roads with potholes and damage cause accidents making timely repair essential." : item === 2 ? "Interruptions  in water supply affect requiring prompt attention and resolution" : "Garbage buildup and poor sanitation cause health risks needing prompt action"}</p>
                     <div className="h-20 relative overflow-hidden">
                       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white/80"></div>
                       <p className="text-gray-600 text-sm">
-                        {item === 1 ? "Writing is an art form that requires both technical skill and creative intuition. In this comprehensive guide, we explore the fundamental elements of compelling storytelling and how to..." : 
-                         item === 2 ? "In today's digital landscape, having a strong online presence is crucial for businesses of all sizes. This article breaks down the most effective digital marketing strategies that can help you..." : 
-                         "The web development field continues to evolve at a rapid pace. From new JavaScript frameworks to innovative design approaches, staying current with the latest trends is essential for..."}
+                        {item === 1 ? "Road maintenance is a critical task that requires careful assessment and timely action. In this guide, we explore the causes of road damage and potholes, their impact on safety and traffic, and how to report them effectively" : 
+                         item === 2 ? "Water supply management is essential for community health and daily life. In this guide, we explore common water supply issues, their impact on households, and how to report disruptions effectively" : 
+                         "Proper street lighting is crucial for safety and urban functionality. This guide explores common streetlight issues, their impact on the community, and how to report malfunctions effectively."}
                       </p>
                     </div>
                     <div className="flex justify-between items-center mt-6 pt-4 border-t border-white/30">
