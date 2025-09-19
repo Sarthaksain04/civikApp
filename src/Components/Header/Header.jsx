@@ -43,7 +43,8 @@ function Header() {
             <nav className='flex h-18'>
                 <div className=' mr-4'>
                     <Link to='/'>
-                    <Logo class="w-5"/>
+                    {/* <Logo class="w-5"/> */}
+                    <Logo className="w-[50px] h-auto" />
 
                     </Link>
                 </div>
