@@ -259,7 +259,7 @@ function Home() {
                     </div>
                   </div>
                   <div className="absolute inset-0 bg-white/90 backdrop-blur-sm flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                    <p className="text-blue-600 font-semibold mb-4 text-center px-6">Login to read the full article</p>
+                    <p className="text-blue-600 font-semibold mb-4 text-center px-6">Login to read  full article</p>
                     <button 
                       onClick={() => navigate('/login')} 
                       className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-medium py-2 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:-translate-y-1"
@@ -275,7 +275,7 @@ function Home() {
                 onClick={() => navigate('/login')} 
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-medium py-4 px-10 rounded-lg shadow-xl transition-all duration-300 text-lg transform hover:-translate-y-1"
               >
-                Login to Read Full Posts
+                Login to Read Full reports
               </button>
             </div>
           </div>
@@ -286,7 +286,7 @@ function Home() {
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16">
               <span className="inline-block px-4 py-2 bg-white/70 backdrop-blur-sm text-blue-800 rounded-full text-sm font-semibold mb-3 border border-white/30">PLATFORM STATS</span>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">A Powerful Blogging Platform</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">A Powerful Civic Reporting Platform</h2>
               <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"></div>
               <p className="text-lg text-gray-700 max-w-2xl mx-auto">
               A powerful platform built for citizens to report, track, and resolve issues seamlessly              </p>
